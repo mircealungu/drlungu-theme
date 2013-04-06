@@ -4,7 +4,7 @@
 <!--[if IE 8 ]> <html lang="en" class="no-js ie8 lte-ie8"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -39,7 +39,7 @@ Support: support@pixelunion.net
 	<meta name="color:Main Theme" content="#f55b2c"/>
 	<meta name="color:Outside Link" content="#f55b2c"/>
 	<meta name="color:Outside Link Hover" content="#131313"/>
-	<meta name="color:Outside Text" content="#616566"/>
+	<meta name="color:Outside Text" content="#212526"/>
 	<meta name="font:Inside Heading" content="Helvetica Neue, Arial, sans-serif"/>
 	<meta name="font:Inside Text" content="Georgia, serif"/>
 	<meta name="font:Outside Heading" content="Helvetica Neue, Arial, sans-serif"/>
@@ -213,7 +213,7 @@ Support: support@pixelunion.net
 		themeColor = "{color:Main Theme}";
 		{block:IfContentWidth500}contentWidth = 500;{/block:IfContentWidth500}
 		{block:IfContentWidth600}contentWidth = 600;{/block:IfContentWidth600}
-		{block:IfContentWidth700}contentWidth = 700;{/block:IfContentWidth700}
+		{block:IfContentWidth700}contentWidth = 900;{/block:IfContentWidth700}
 		{block:IfCustomPhotosets}customPhotosets = true;{/block:IfCustomPhotosets}
 		{block:IndexPage}{block:IfInfiniteScrolling}infiniteScroll = true;{/block:IfInfiniteScrolling}{/block:IndexPage}
 		{block:IfCollapseNotes}collapseNotes = true;{/block:IfCollapseNotes}
@@ -243,7 +243,7 @@ Support: support@pixelunion.net
 		photosets = {};
 	</script>
 	<style type="text/css">
-		 body { font-family:{font:Outside Text}; font-size: 14px; color:{color:Outside Text}; background-color:{color:Background};{block:IfBackgroundImage}background-image:url({image:Background}); background-repeat:repeat;{block:IfFixedBackground} background-attachment:fixed;{/block:IfFixedBackground}{/block:IfBackgroundImage} }
+		 body { font-size: 16px; font-family:{font:Outside Text}; color:{color:Outside Text}; background-color:{color:Background};{block:IfBackgroundImage}background-image:url({image:Background}); background-repeat:repeat;{block:IfFixedBackground} background-attachment:fixed;{/block:IfFixedBackground}{/block:IfBackgroundImage} }
 		.blog-title, #sidebar h1, #sidebar h2, #sidebar h3, #footer h1, #footer h2, #footer h3  { font-family:{font:Outside Heading}; }
 		.copy { font-family:{font:Inside Text}; }
 		.copy h1, .copy h2, .copy h3, .copy h4, .copy h5, .copy h6, .auto-headings .copy p:first-child strong:first-child, #notes h2, #disqus h2, .speaker {font-family:{font:Inside Heading};}
@@ -285,6 +285,10 @@ Support: support@pixelunion.net
 		ol.notes li.tumblelog_{PlaintextName} { background-color:#fbfbfb; }
 		ol.notes li.tumblelog_{PlaintextName} .action { font-weight:bold; }
 		#page, .inner { margin:{block:IfCenteredLayout}0 auto{/block:IfCenteredLayout}{block:IfNotCenteredLayout}0 0 0 40px{/block:ifNotCenteredLayout}; }
+
+		.copy {
+			color: #333333;
+		}
 
 		{CustomCSS}
 	</style>
