@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!--
 ===========================================================================
@@ -304,7 +304,7 @@ Support: support@pixelunion.net
 			{/block:IfLogoInTopBar}
 
 			{block:IfNotBlogTitleInPageHeader}
-			<h1 class="blog-title{block:IfNotBlogTitleInTopBar} hidden{/block:IfNotBlogTitleInTopBar}"><a href="/">{Title}</a></h1>
+			<h1 style="width:200px;" class="blog-title{block:IfNotBlogTitleInTopBar} hidden{/block:IfNotBlogTitleInTopBar}"><a href="/">{Title}</a></h1>
 			{/block:IfNotBlogTitleInPageHeader}
 
 			{block:IfPagesInTopBar}
@@ -317,13 +317,15 @@ Support: support@pixelunion.net
 			{/block:HasPages}
 			{/block:IfPagesInTopBar}
 
-			{block:IfNotSearchBoxInSidebar}
+			<!--mircea: remved
+            {block:IfNotSearchBoxInSidebar}
 			<div id="search">
 				<form id="search-form" method="get" action="/search">
 					<input type="text" name="q" value="{block:IfDefaultSearchText}{text:Default Search Text}{/block:IfDefaultSearchText}" />
 				</form>
 			</div>
 			{/block:IfNotSearchBoxInSidebar}
+            -->
 			<ul class="menu">
  				{block:IfShowRandomPostIcon}<li><a class="random" href="/random"{block:IfNotTopMenuWithLabels} title="{lang:Random post}"{/block:IfNotTopMenuWithLabels}><span class="icon"></span><span class="label">{lang:Random}</span></a></li>{/block:IfShowRandomPostIcon}
 				<li><a class="archives" href="/archive"{block:IfNotTopMenuWithLabels} title="Archive"{/block:IfNotTopMenuWithLabels}><span class="icon"></span><span class="label">{lang:Archive}</span></a></li>
@@ -647,6 +649,7 @@ Support: support@pixelunion.net
 				{/block:IfShowDescription}
 			</div><!--/#blog-info -->
 
+            <!-- mircea: don't like search
 			{block:IfSearchBoxInSidebar}
 			<div id="search">
 				<form id="search-form" method="get" action="/search">
@@ -656,6 +659,7 @@ Support: support@pixelunion.net
 				</form>
 			</div>
 			{/block:IfSearchBoxInSidebar}
+            -->
 
 			{block:IfNotPagesInTopBar}
 			{block:HasPages}
