@@ -352,7 +352,7 @@ Support: support@pixelunion.net
 		</div>
 		{/block:IfBlogTitleInPageHeader}
 		{/block:IfNotBannerImage}
-		<div id="content" class="first_page">
+		<div id="content" {block:TagPage}class="tag_page"{/block:TagPage}{block:PermalinkPage}class="perma_page"{/block:PermalinkPage}>
 
 			<!-- BEGIN POSTS -->
 			<!-- mircea: this is the main page -->
