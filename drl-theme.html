@@ -355,13 +355,15 @@ Support: support@pixelunion.net
 		<div id="content">
 
 			<!-- BEGIN POSTS -->
+			<!-- mircea: this is the main page -->
 			{block:Posts}
 			<article id="post-{postID}" class="post {block:Text}type-text {/block:Text}{block:Photo}type-photo {/block:Photo}{block:Photoset}type-photoset {/block:Photoset}{block:Quote}type-quote {/block:Quote}{block:Link}type-link {/block:Link}{block:Chat}type-chat {/block:Chat}{block:Video}type-video {/block:Video}{block:Audio}type-audio {/block:Audio}{block:Answer}type-answer {/block:Answer}{block:Tags}tag_{URLSafeTag} {/block:Tags}">
 
 				{block:Text}
 				<div class="post-panel">
 					<div class="copy">
-						{block:Title}<h2 class="post-title">{Title}</h2>{/block:Title}
+					<!-- mircea: added here the link to the title -->
+						{block:Title}<h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
 						{Body}
 					</div>
 				{/block:Text}
