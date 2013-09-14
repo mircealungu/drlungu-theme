@@ -1,0 +1,9 @@
+.notes {display: none}
+.tag_page .notes {display: block}
+.perma_page .notes {display: block}
+.highlight {
+		background-color: fff0f8; 
+		color: #f55b2c; 
+		margin-top: 16pt; 
+		font-weight: 500
+	}

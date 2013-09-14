@@ -26,7 +26,7 @@ Support: support@pixelunion.net
 ===========================================================================
 -->
 
-	<title>{Title}{block:TagPage} &bull; Posts Tagged &lsquo;{Tag}&rsquo;{/block:TagPage}{block:PostSummary} &bull; {PostSummary}{/block:PostSummary}</title>
+    <title>{Title}{block:TagPage} &bull; Posts Tagged &lsquo;{Tag}&rsquo;{/block:TagPage}{block:PostSummary} &bull; {PostSummary}{/block:PostSummary}</title>
 	{block:Description}
 	<meta name="description" content="{MetaDescription}"/>
 	{/block:Description}
@@ -544,7 +544,11 @@ Support: support@pixelunion.net
 								{block:IfShowGroupBlogInfo}<li class="post-author"><img alt="{PostAuthorName} Avatar" src="{PostAuthorPortraitURL-16}"> Posted by <a href="{PostAuthorURL}">{PostAuthorName}</a></li>{/block:IfShowGroupBlogInfo}
 								<li class="date{block:RebloggedFrom}-reblogged{/block:RebloggedFrom}"><a href="{Permalink}" title="{ShortDayOfWeek}. {Month} {DayOfMonth}, {Year} @ {12Hour}:{Minutes} {AmPm}"><span class="icon"></span>{TimeAgo}</a>{block:RebloggedFrom} <em>&gt;</em> <a class="reblogged-from" href="{ReblogRootURL}" title="{ReblogRootTitle}">{ReblogRootName}</a>{/block:RebloggedFrom}</li>
 								{block:NoteCount}<li class="notes"><a href="{Permalink}#notes"><span class="icon"></span>{NoteCount}</a></li>{/block:NoteCount}
+
+								<!--
 								{block:IfDisqusShortname}<li class="comments hidden"><a id="dsq-{PostID}" href="{Permalink}#disqus_thread"><span class="icon"></span>Comments</a></li>{/block:IfDisqusShortname}
+								-->
+
 								<li class="permalink"><a href="{Permalink}"><span class="icon"></span>{lang:Permalink}</a></li>
 							</ul><!--/.meta-list -->
 							<div class="share">
@@ -824,6 +828,9 @@ Support: support@pixelunion.net
 <script src="/tweets.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://static.tumblr.com/hugxd2w/s4om61ic8/jquery-1.7.2.min.js"><\/script>')</script>
+<link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"></link>  
+<script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>  
+
 <script src="http://static.tumblr.com/hugxd2w/Xtema9ggk/plugins.min.js"></script>
 <script src="http://static.tumblr.com/a080hxb/Ccwmk1283/script.min.js"></script>
 <script src="http://platform.twitter.com/widgets.js"></script>
